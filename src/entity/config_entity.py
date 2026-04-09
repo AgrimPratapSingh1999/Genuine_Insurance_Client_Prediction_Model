@@ -4,8 +4,7 @@ from dataclasses import dataclass
 from datetime import datetime
 
 
-TIMESTAMP = datetime.now().strftime("%M_%d_%Y_%d_%M_%d_%S")
-
+TIMESTAMP=datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
 @dataclass
 class TrainingPipelineConfig:
     pipeline_name = PIPELINE_NAME
